@@ -22,7 +22,6 @@ function storyTelling() {
         preview.style.backgroundSize='cover';
         restartAnimations(document.querySelector(".progressbar__svg-circle"));
         count++;
-        console.log(imagePaths[count])
         if (count === imagePaths.length){
             count = 0;
         }
