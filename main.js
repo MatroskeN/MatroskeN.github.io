@@ -20,7 +20,7 @@ function storyTelling() {
     let timerId = setInterval(() => {
         preview.style.background='url('+imagePaths[count]+') center center';
         preview.style.backgroundSize='cover';
-        restartAnimations(document.querySelector(".progressbar__svg-circle"));
+        restartAnimations(document.querySelector(".story__svg-circle"));
         count++;
         if (count === imagePaths.length){
             count = 0;
