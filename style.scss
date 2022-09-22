@@ -1,9 +1,10 @@
-$color-black: hsl(0, 0%, 5%);
-$color-color: hsl(0, 0%, 100%);
+$color-black: #0D0D0DFF;
+$color-white: #FFFFFF;
+$color-red: #8B0000FF;
 
-$color-story: hsl(300, 100%, 60%);
+$color-story: #FF33FFFF;
 
-$porcent-story: 100;
+$percent-story: 100;
 
 @function strokeDashoffset($num) {
   @return 440 - (440 * $num) / 100;
@@ -46,7 +47,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: darkred;
+    background: $color-red;
     width: 200px;
     height: 200px;
     -webkit-animation: square-bounce 3s linear infinite;
@@ -71,14 +72,14 @@ body {
   .progressbar {
     width: 500px;
     height: 30px;
-    border: 1px solid #ffffff;
+    border: 1px solid $color-white;
     position: relative;
 
     .fill {
       position: absolute;
       top: 0;
       left: 0;
-      background: darkred;
+      background: $color-red;
       height: 100%;
       width: 0;
       -webkit-animation: progressbar-fill 3s linear infinite;
@@ -121,9 +122,9 @@ body {
   stroke-width: 10;
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
-  stroke: hsl(0, 0%, 100%);
+  stroke: $color-white;
   stroke-linecap: round;
-  transform: translate(5px, 5px); // stroke-width / 2
+  transform: translate(5px, 5px);
 }
 
 .shadow {
@@ -166,6 +167,6 @@ body {
 
 @keyframes anim_circle-story {
   to {
-    stroke-dashoffset: strokeDashoffset($porcent-story);
+    stroke-dashoffset: strokeDashoffset($percent-story);
   }
 }

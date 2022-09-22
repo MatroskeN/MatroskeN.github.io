@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: #0d0d0d;
+  background: #0D0D0DFF;
 }
 
 * {
@@ -35,7 +35,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: darkred;
+  background: #8B0000FF;
   width: 200px;
   height: 200px;
   -webkit-animation: square-bounce 3s linear infinite;
@@ -64,14 +64,14 @@ body {
 .container__progressbar .progressbar {
   width: 500px;
   height: 30px;
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF;
   position: relative;
 }
 .container__progressbar .progressbar .fill {
   position: absolute;
   top: 0;
   left: 0;
-  background: darkred;
+  background: #8B0000FF;
   height: 100%;
   width: 0;
   -webkit-animation: progressbar-fill 3s linear infinite;
@@ -111,13 +111,13 @@ body {
   stroke-width: 10;
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
-  stroke: white;
+  stroke: #FFFFFF;
   stroke-linecap: round;
   transform: translate(5px, 5px);
 }
 
 .shadow-story {
-  filter: drop-shadow(0 0 5px #ff33ff);
+  filter: drop-shadow(0 0 5px #FF33FFFF);
 }
 
 .circle-story {
