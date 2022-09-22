@@ -17,7 +17,7 @@ function storyTelling() {
         images[count].classList.add('active');
         restartAnimations(document.querySelector(".story__svg-circle"));
         count++;
-        if (count === imagePaths.length){
+        if (count === images.length){
             count = 0;
         }
     }, 3000)
