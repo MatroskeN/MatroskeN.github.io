@@ -1,5 +1,3 @@
-
-
 $color-black: hsl(0, 0%, 5%);
 $color-color: hsl(0, 0%, 100%);
 
@@ -11,12 +9,13 @@ $porcent-story: 100;
   @return 440 - (440 * $num) / 100;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   background: $color-black;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -42,13 +41,16 @@ body{
   align-items: flex-start;
   position: relative;
   margin-top: 50px;
-  .bouncer{
+
+  .bouncer {
     position: absolute;
     top: 0;
     left: 0;
     background: darkred;
     width: 200px;
     height: 200px;
+    -webkit-animation: square-bounce 3s linear infinite;
+    -o-animation: square-bounce 3s linear infinite;
     animation: square-bounce 3s linear infinite;
   }
 }
@@ -59,18 +61,20 @@ body{
   100% { left: calc(100% - 200px) }
 }
 
-.container__progressbar{
+.container__progressbar {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  .progressbar{
+
+  .progressbar {
     width: 500px;
     height: 30px;
     border: 1px solid #ffffff;
     position: relative;
-    .fill{
+
+    .fill {
       position: absolute;
       top: 0;
       left: 0;
@@ -85,9 +89,15 @@ body{
 }
 
 @keyframes progressbar-fill {
-  0% { width: 100% }
-  50% { width: 0 }
-  100% { width: 100% }
+  0% {
+    width: 100%
+  }
+  50% {
+    width: 0
+  }
+  100% {
+    width: 100%
+  }
 }
 
 .story {
@@ -124,6 +134,8 @@ body{
 
 .circle {
   &-story {
+    -webkit-animation: anim_circle-story 3s ease-in-out forwards;
+    -o-animation: anim_circle-story 3s ease-in-out forwards;
     animation: anim_circle-story 3s ease-in-out forwards;
   }
 }
@@ -134,10 +146,20 @@ body{
   left: 50%;
   width: 140px;
   height: 140px;
-  background: url("images/billy.jpg") center center;
-  background-size: cover;
   border-radius: 50%;
   transform: translate(-50%, -50%) rotate(90deg);
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
 }
 
 //  @keyframes

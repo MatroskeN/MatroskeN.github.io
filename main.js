@@ -16,10 +16,13 @@ let imagePaths = [
 ]
 
 function storyTelling() {
-    let count = 0;
+    let count = 1;
     let timerId = setInterval(() => {
-        preview.style.background='url('+imagePaths[count]+') center center';
-        preview.style.backgroundSize='cover';
+        let images = document.querySelectorAll('.preview__image');
+        images.forEach( image => {
+            image.classList.remove('active')
+        })
+        images[count].classList.add('active');
         restartAnimations(document.querySelector(".story__svg-circle"));
         count++;
         if (count === imagePaths.length){

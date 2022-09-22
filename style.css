@@ -38,6 +38,8 @@ body {
   background: darkred;
   width: 200px;
   height: 200px;
+  -webkit-animation: square-bounce 3s linear infinite;
+  -o-animation: square-bounce 3s linear infinite;
   animation: square-bounce 3s linear infinite;
 }
 
@@ -119,6 +121,8 @@ body {
 }
 
 .circle-story {
+  -webkit-animation: anim_circle-story 3s ease-in-out forwards;
+  -o-animation: anim_circle-story 3s ease-in-out forwards;
   animation: anim_circle-story 3s ease-in-out forwards;
 }
 
@@ -128,10 +132,18 @@ body {
   left: 50%;
   width: 140px;
   height: 140px;
-  background: url("images/billy.jpg") center center;
-  background-size: cover;
   border-radius: 50%;
   transform: translate(-50%, -50%) rotate(90deg);
+}
+.preview img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: none;
+}
+.preview .active {
+  display: block;
 }
 
 @keyframes anim_circle-story {
