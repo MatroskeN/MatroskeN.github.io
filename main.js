@@ -5,8 +5,6 @@ const restartAnimations = ($el) => {
     });
 };
 
-let preview = document.querySelector('.preview');
-
 function storyTelling() {
     let count = 1;
     let timerId = setInterval(() => {
