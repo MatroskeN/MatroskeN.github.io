@@ -7,14 +7,6 @@ const restartAnimations = ($el) => {
 
 let preview = document.querySelector('.preview');
 
-let imagePaths = [
-    'images/doomer.jpg',
-    'images/girl.jpg',
-    'images/handshake.jpg',
-    'images/itachi.jpg',
-    'images/billy.jpg'
-]
-
 function storyTelling() {
     let count = 1;
     let timerId = setInterval(() => {
