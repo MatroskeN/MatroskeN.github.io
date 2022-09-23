@@ -73,6 +73,10 @@
   section .sectionContent .content .order {
     left: 384px;
   }
+
+  .lightTheme .sectionHeader-top .burger svg path {
+    fill: #23262C;
+  }
 }
 @media (max-width: 769px) {
   section .sectionContent {
