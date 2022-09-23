@@ -84,7 +84,7 @@
   }
   section .sectionContent .content .price {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   section .sectionContent .content .price, section .sectionContent .content .size {
     font-size: 130px;
@@ -107,7 +107,7 @@
     margin-top: 78px;
   }
   section .sectionContent {
-    margin-top: 45px;
+    margin-top: 25px;
   }
   section .sectionContent .divide {
     height: 3px;
@@ -121,10 +121,10 @@
   }
 
   .lightTheme .sectionContent {
-    margin-top: 45px;
+    margin-top: 25px;
   }
   .lightTheme .sectionSlider {
-    margin-top: 60px;
+    margin-top: 40px;
   }
   .lightTheme .sectionSlider .range__slider [type=range] {
     height: 3px;
