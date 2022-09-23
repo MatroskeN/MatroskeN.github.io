@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+.well {
+  position: relative;
+  overflow: hidden;
+  transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+section .sectionHeader {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 32px 24px;
+}
+section .sectionHeader .link {
+  font-family: "Suisse Intl", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-right: 24px;
+}
+section .sectionHeader .link span {
+  color: #85878A;
+}
+section .sectionHeader-top {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+section .sectionHeader-top .topIcon {
+  margin-left: 635px;
+  margin-right: 265px;
+}
+section .sectionHeader-top .burger {
+  display: none;
+}
+section .sectionHeader-bottom {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  margin-top: 7px;
+}
+section .sectionHeader-bottom svg {
+  margin-right: 8px;
+}
+section .sectionFootNote {
+  margin-top: 113px;
+  margin-left: 24px;
+  font-family: "Suisse Intl", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+section .sectionFootNote span {
+  background: #00FFD1;
+  color: #0F1011;
+}
+section .sectionContent {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 242px;
+}
+section .sectionContent .content {
+  display: flex;
+}
+section .sectionContent .content .size {
+  font-family: "Suisse Intl", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 180px;
+  line-height: 140px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+section .sectionContent .content .price {
+  font-family: "Suisse Intl", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 180px;
+  line-height: 140px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin-left: 28px;
+}
+section .sectionContent .content .order {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 719px;
+  bottom: 33px;
+  border: none;
+  border-radius: 50%;
+  background: #00FFD1;
+  cursor: pointer;
+}
+section .sectionContent .content .order span {
+  font-family: "Suisse Intl", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #0F1011;
+}
+section .sectionContent .content .order svg {
+  margin-top: 21px;
+}
+
+.darkTheme {
+  background: #0F1011;
+  transition: background 0.4s;
+}
+.darkTheme .sectionSlider {
+  display: none;
+}
+
+.lightTheme {
+  background: #E7E7E8;
+  position: relative;
+}
+.lightTheme .sectionHeader .link {
+  color: #23262C;
+}
+.lightTheme .sectionHeader-top .topIcon {
+  transition: all 0.4s;
+}
+.lightTheme .sectionHeader-top .topIcon path {
+  fill: #23262C;
+}
+.lightTheme .sectionFootNote {
+  color: #23262C;
+}
+.lightTheme .sectionContent {
+  margin-top: 80px;
+}
+.lightTheme .sectionContent .content .size {
+  color: #23262C;
+}
+.lightTheme .sectionContent .content .price {
+  color: #23262C;
+}
+.lightTheme .sectionSlider {
+  margin-top: 114px;
+  display: flex;
+  width: 100%;
+  padding: 0 24px 0 27px;
+  position: relative;
+  /* custom thumb */
+}
+.lightTheme .sectionSlider .line {
+  width: 100%;
+  height: 6px;
+  background: #23262C;
+  position: relative;
+}
+.lightTheme .sectionSlider .line .sliderButton {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  padding: 0;
+  cursor: pointer;
+}
+.lightTheme .sectionSlider .range {
+  display: flex;
+  width: 100%;
+}
+.lightTheme .sectionSlider .range__slider {
+  width: 100%;
+}
+.lightTheme .sectionSlider .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lightTheme .sectionSlider .range__slider [type=range] {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 6px;
+  background: #23262C;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.lightTheme .sectionSlider .range__slider [type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-image: url("../images/range.svg");
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+.lightTheme .sectionSlider .range__slider [type=range]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f0932b;
+  border: #f9ca24 5px solid;
+  cursor: pointer;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+.lightTheme .sectionSlider .min {
+  position: absolute;
+  top: 14px;
+  left: 27px;
+  font-family: "Suisse Intl", serif;
+  font-size: 24px;
+  line-height: 130%;
+  color: #85878A;
+}
+.lightTheme .sectionSlider .max {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  font-family: "Suisse Intl", serif;
+  font-size: 24px;
+  line-height: 130%;
+  color: #85878A;
+}
+
+/*# sourceMappingURL=style.css.map */

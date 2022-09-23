@@ -1,0 +1,173 @@
+@media (max-width: 1540px) {
+  section .sectionHeader-top .topIcon {
+    margin-left: 359px;
+    margin-right: auto;
+  }
+  section .sectionContent {
+    margin-top: 80px;
+  }
+  section .sectionContent .content .size {
+    font-size: 110px;
+    line-height: 100px;
+  }
+  section .sectionContent .content .price {
+    font-size: 110px;
+    line-height: 100px;
+  }
+  section .sectionContent .content .order {
+    bottom: 42px;
+    left: 558px;
+    width: 128px;
+    height: 128px;
+  }
+
+  .lightTheme .sectionSlider {
+    margin-top: 65px;
+  }
+}
+@media (max-width: 1281px) {
+  section .sectionContent .content .size {
+    font-size: 100px;
+  }
+  section .sectionContent .content .price {
+    font-size: 100px;
+  }
+  section .sectionContent .content .order {
+    bottom: 18px;
+    left: 536px;
+  }
+}
+@media (max-width: 1024px) {
+  section .sectionHeader-top .menu, section .sectionHeader-top .navigation {
+    display: none;
+  }
+  section .sectionHeader-top .topIcon {
+    margin-left: unset;
+  }
+  section .sectionHeader-top .burger {
+    display: block;
+  }
+  section .sectionHeader-bottom {
+    display: none;
+  }
+  section .sectionFootNote {
+    margin-top: 87px;
+  }
+  section .sectionContent {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 26px 0 21px;
+    margin-left: 0;
+  }
+  section .sectionContent .divide {
+    width: 100%;
+    height: 6px;
+    background: #E7E7E8;
+  }
+  section .sectionContent .content {
+    margin: 27px 0 0 34px;
+  }
+  section .sectionContent .content .size, section .sectionContent .content .price {
+    font-size: 120px;
+  }
+  section .sectionContent .content .order {
+    left: 384px;
+  }
+}
+@media (max-width: 769px) {
+  section .sectionContent {
+    margin-top: 60px;
+  }
+  section .sectionContent .content {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  section .sectionContent .content .price {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  section .sectionContent .content .price, section .sectionContent .content .size {
+    font-size: 130px;
+    line-height: 130px;
+  }
+  section .sectionContent .content .order {
+    left: 27px;
+    bottom: 38px;
+  }
+
+  .lightTheme .sectionContent {
+    margin-top: 60px;
+  }
+  .lightTheme .sectionSlider {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 636px) {
+  section .sectionFootNote {
+    margin-top: 78px;
+  }
+  section .sectionContent {
+    margin-top: 45px;
+  }
+  section .sectionContent .divide {
+    height: 3px;
+  }
+  section .sectionContent .content {
+    margin-top: 16px;
+  }
+  section .sectionContent .content .price, section .sectionContent .content .size {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .lightTheme .sectionContent {
+    margin-top: 45px;
+  }
+  .lightTheme .sectionSlider {
+    margin-top: 60px;
+  }
+  .lightTheme .sectionSlider .range__slider [type=range] {
+    height: 3px;
+  }
+  .lightTheme .sectionSlider .range__slider [type=range]::-webkit-slider-thumb {
+    width: 32px;
+    height: 32px;
+  }
+  .lightTheme .sectionSlider .max, .lightTheme .sectionSlider .min {
+    font-size: 14px;
+  }
+}
+@media (max-width: 321px) {
+  section .sectionFootNote {
+    font-size: 20px;
+  }
+  section .sectionContent {
+    margin-top: 37px;
+  }
+  section .sectionContent .content .price, section .sectionContent .content .size {
+    font-size: 55px;
+    line-height: 55px;
+  }
+  section .sectionContent .content .price {
+    margin-top: 0;
+  }
+  section .sectionContent .content .order {
+    width: 85px;
+    height: 85px;
+  }
+  section .sectionContent .content .order span {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  section .sectionContent .content .order svg {
+    margin-top: 10px;
+    width: 20px;
+    height: 25px;
+  }
+
+  .lightTheme .sectionContent {
+    margin-top: 37px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
